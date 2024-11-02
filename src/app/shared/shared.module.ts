@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 import { MenuComponent } from './components/menu/menu.component';
+import {MenubarModule} from 'primeng/menubar';
+
 
 
 
@@ -16,7 +18,8 @@ import { MenuComponent } from './components/menu/menu.component';
     PrimeNgModule
   ],
   exports:[
-    MenuComponent
+    MenuComponent,
+    MenubarModule
   ]
 })
 export class SharedModule { }
