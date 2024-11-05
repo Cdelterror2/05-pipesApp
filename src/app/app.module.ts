@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
@@ -7,6 +7,16 @@ import { AppComponent } from './app.component';
 
 import { SharedModule } from './shared/shared.module';
 
+//configuración del locale de la app
+import localEsCO from '@angular/common/locales/es-CO';
+import localPtPT from '@angular/common/locales/pt-PT';
+
+
+import { registerLocaleData } from '@angular/common';
+
+//se manda a llamar para que establezca en angular los locales
+registerLocaleData(localEsCO);
+registerLocaleData(localPtPT);
 
 @NgModule({
   declarations: [
@@ -19,7 +29,7 @@ import { SharedModule } from './shared/shared.module';
     SharedModule,
 ],
   providers: [
-    provideClientHydration()
+    { provide: LOCALE_ID, useValue: 'es-CO' }
   ],
   bootstrap: [AppComponent]
 })
