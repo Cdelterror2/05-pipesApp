@@ -32,5 +32,12 @@ export class UncommonPageComponent {
     this.clients.shift();
   }
 
+  //keyValue Pipe
+  public person = {
+    name: 'Rodolfo el reno',
+    age: 23,
+    address: 'tenía roja, la nariz'
+  }
+
 
 }
