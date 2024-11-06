@@ -19,4 +19,18 @@ export class UncommonPageComponent {
     this.name = 'When';
     this.gender = 'female';
   }
+
+  //118nPlural
+  public clients: string[] = ['Pedro', 'Juliana', 'Melissa', 'Gabriel', 'Samuel', 'Tertulia', 'mojojojo'];
+  public clientsMap = {
+    '=0': 'no tenemos ningún cliente esperando.',
+    '=1': 'tenemos 1 cliente esperando.',
+    'other': 'tenemos # clientes esperando',
+  }
+
+  deleteClient():void{
+    this.clients.shift();
+  }
+
+
 }

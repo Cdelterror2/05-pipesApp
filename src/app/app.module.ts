@@ -10,13 +10,14 @@ import { SharedModule } from './shared/shared.module';
 //configuración del locale de la app
 import localEsCO from '@angular/common/locales/es-CO';
 import localPtPT from '@angular/common/locales/pt-PT';
-
+import localEnBI from '@angular/common/locales/en-BI';
 
 import { registerLocaleData } from '@angular/common';
 
 //se manda a llamar para que establezca en angular los locales
 registerLocaleData(localEsCO);
 registerLocaleData(localPtPT);
+registerLocaleData(localEnBI);
 
 @NgModule({
   declarations: [
