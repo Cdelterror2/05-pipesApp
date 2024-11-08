@@ -9,6 +9,8 @@ import {MenubarModule} from 'primeng/menubar';
 
 
 
+
+
 @NgModule({
   declarations: [
     MenuComponent
@@ -19,7 +21,7 @@ import {MenubarModule} from 'primeng/menubar';
   ],
   exports:[
     MenuComponent,
-    MenubarModule
+    MenubarModule,
   ]
 })
 export class SharedModule { }
