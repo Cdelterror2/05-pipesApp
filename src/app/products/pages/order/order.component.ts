@@ -39,4 +39,5 @@ export class OrderComponent {
   toggleUperCase():void {
     this.isUpperCase = !this.isUpperCase;
   }
+
 }
